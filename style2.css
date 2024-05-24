@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/1.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.nav-links:hover {
+    background-color: #575757;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-toggle-label {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggle-label span {
+    background: white;
+    border-radius: 2px;
+    height: 3px;
+    margin: 5px 0;
+    width: 25px;
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-toggle:checked + .navbar-toggle-label + .main-nav {
+        display: flex;
+    }
+
+    .navbar-toggle-label {
+        display: flex;
+    }
+
+    .navbar-toggle-label span {
+        transition: background 0.3s ease;
+    }
+
+    .navbar-toggle:checked + .navbar-toggle-label span:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 8px;
+    }
+
+    .navbar-toggle:checked + .navbar-toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle:checked + .navbar-toggle-label span:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -8px;
+    }
+}
+
+
+.card {
+    background-color: #181717;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 28%;
+    margin-top: 20px;
+    
+    
+    
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card2-image{
+    width: 100%;
+    height: 400px;
+}
+
+.card-content {
+    padding: 15px;
+    background-color: #181717;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+

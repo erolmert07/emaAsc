@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assassin's Creed Haberler</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand"><img src="img/icon1.png" alt=""></div>
+        <input type="checkbox" id="toggle" class="navbar-toggle">
+        <label for="toggle" class="navbar-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="main-nav">
+            <li><a href="index.html" class="nav-links">Anasayfa</a></li>
+            <li><a href="games.html" class="nav-links">Oyunlar</a></li>
+            <li><a href="news.html" class="nav-links">Haberler</a></li>
+            
+        </ul>
+    </nav>
+
+    <section class="news-section">
+        <div class="container">
+            <article class="news-card">
+                <img src="img/newsimg.jpg" alt="Haber Resmi" class="news-image">
+                <div class="news-content">
+                    <h2 class="news-title">Yeni Assassin's Creed Oyunu Duyuruldu!</h2>
+                    <p class="news-description">Ubisoft, yeni Assassin's Creed oyunu için heyecan verici bir duyuru yaptı. Detaylar için haberimize göz atın!</p>
+                    <a href="#" class="read-more" onclick="showDetails(event, 'haber1')">Devamını Oku</a>
+                </div>
+                <div class="detail-popup" id="haber1">
+                    <h2>Assassin's Creed: Shadows of the Empire</h2>
+                    <p>Ubisoft, Assassin's Creed serisinin yeni oyunu olan "Assassin's Creed: Shadows of the Empire"ı resmi olarak duyurdu! Oyuncular, serinin bu en yeni oyununda Orta Çağ'ın karanlık ve gizemli dönemine geri dönüyor.</p>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="img/new2img.jpg" alt="Haber Resmi" class="news-image">
+                <div class="news-content">
+                    <h2 class="news-title">Assassin's Creed Valhalla: "Gizli Tapınaklar" DLC'si Duyuruldu!</h2>
+                    <p class="news-description">Ubisoft, Assassin's Creed Valhalla için yeni ve heyecan verici bir DLC olan "Gizli Tapınaklar"ı duyurdu!</p>
+                    <a href="#" class="read-more" onclick="showDetails(event, 'haber2')">Devamını Oku</a>
+                </div>
+                <div class="detail-popup" id="haber2">
+                    <h2>"Gizli Tapınaklar" DLC'si, Eivor'un İskandinavya'nın gizemli ve mistik köşelerinde kayıp tapınakları keşfetmesini konu alıyor.</h2>
+                    <p>Bu tapınaklar, antik bir uygarlığın sırlarını ve gizemlerini barındırıyor. Oyuncular, tapınakların derinliklerine inerek efsanevi hazineleri bulacak ve bu sırları koruyan güçlü muhafızlarla yüzleşecekler.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Assassin's Creed</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input{
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    
+}
+
+form{
+    text-align: center;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 4px;
+    transition: .5s;
+}
+
+button:hover{
+    color: red;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
